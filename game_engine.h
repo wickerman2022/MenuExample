@@ -31,6 +31,9 @@ public:
 
     //Game logic
     void update(unsigned int dt); //dt is the time since the last update in milliseconds
+
+    //get the SDL2 renderer
+    SDL_Renderer* getRenderer() const { return renderer.get(); }
 private:
     //Private constructor and destructor to prevent multiple instances
     GameEngine();
